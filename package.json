@@ -1,0 +1,15 @@
+{
+  "name": "vocat-lite",
+  "version": "1.0.0",
+  "description": "Lightweight voice-activated terminal commands - CLI only",
+  "main": "src/index.js",
+  "bin": {
+    "vocat-lite": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["voice", "terminal", "cli", "git", "automation"],
+  "author": "",
+  "license": "MIT"
+}
