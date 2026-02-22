@@ -1,61 +1,84 @@
-# VoCAT-Lite
+# vocat-lite
 
-A lightweight command-line interface for voice-activated terminal commands. No GUI, just pure terminal power.
+## Detailed Description
 
-## Features
+vocat-lite is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-- Voice-activated commands via terminal
-- Git integration (commit, push, pull, status)
-- NPM script execution
-- Natural language command parsing
-- Multiple voice themes (Jarvis, Peon)
-- TTS notifications for command results
+## Problem Statement
 
-## Installation
+Describe the user or business problem this project solves, the target users, and expected outcomes.
+
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-npm install -g vocat-lite
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
 ## Usage
 
-```bash
-# Run a voice command
-vocat-lite run tests
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-# Commit changes
-vocat-lite commit "my changes"
+## Quality Standards
 
-# Push to remote
-vocat-lite push
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-# Pull latest
-vocat-lite pull
+## Security
 
-# Run npm scripts
-vocat-lite build
-vocat-lite dev
-```
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-## Voice Themes
+## Contributing
 
-- `jarvis` - Professional AI assistant voice
-- `peon` - Playful robot voice
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-## Configuration
+## Roadmap
 
-Config file at `~/.vocat/config.json`:
+Track upcoming milestones, technical debt, and planned feature work.
 
-```json
-{
-  "voice": {
-    "theme": "jarvis",
-    "rate": 1.0
-  },
-  "workingDirectory": "/path/to/project"
-}
-```
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT
+This project is released under the MIT License.
